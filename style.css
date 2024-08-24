@@ -575,12 +575,12 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
     }
    #face pre {
     padding: 6% 7% 7% 1%;
-    font-size: 26px;
-    MARGIN-TOP: 21%;
-    PADDING-BOTTOM: 84%;
+    font-size: 25px;
+    MARGIN-TOP: 14%;
+    PADDING-BOTTOM: 62%;
     }
     nav{
-        width:12%;
+        width: 6%;
     }
     #car1, #car2, #car3 {
     left:13%;
