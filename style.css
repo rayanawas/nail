@@ -2,6 +2,14 @@ body{
     margin: 0;
     font-family: Poppins;
 }
+.container{
+   /* width: 900px;*/
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    transition: transform .5s;
+    PADDING-BOTTOM: 4%;
+}
 input{
     background-color: #f6d5dc;
     border: none;
@@ -44,24 +52,24 @@ header{
     border-color: #f6d5d1 transparent transparent transparent;
 }
 #test2 {
+    BOTTOM: 0;
+    RIGHT: 0;
+    POSITION: absolute;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 0 0 150px 150px;
-    border-color: #dd9fae transparent transparent transparent;
-    top: 0;
-    right: 0;
-    position: absolute;
+    border-color: transparent transparent #dd9fae transparent;
 }
 
 #test3 {
-    top: 0;
-    right: 0;
-    position: absolute;
+    BOTTOM: 0;
+    RIGHT: 0;
+    POSITION: absolute;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 0 200px 154px;
+    border-width: 200px 0 0 154px;
     border-color: #f6d5d1 transparent transparent transparent;
 }
 header img{
@@ -165,24 +173,11 @@ a{
     border-radius: 50%; 
     margin: 10%;
 }
-form{
-    Width: 360px;
-    border: 1px solid #f44c7f;
-    PADDING: 4%;
-    box-shadow: -1px -1px 7px 6px #f44c7f91;
-    border-radius: 32px;
 
-    Width: 360px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: center;
-}
 #formulaire{
     justify-content: center;
     display: flex;
 }
-
-
 .btn41-43 {
     padding: 10px 25px;
     font-family: "Roboto", sans-serif;
@@ -196,9 +191,10 @@ form{
   }
   
   .btn-41 {
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid #F44C7F;
     z-index: 1;
-    color: white;
+    color: #F44C7F;
+    MARGIN-TOP: 7%;
   }
   
   .btn-41:after {
@@ -210,7 +206,7 @@ form{
     left: 0;
     direction: rtl;
     z-index: -1;
-    background: rgb(255, 255, 255);
+    background: #F44C7F;
     transition: all 0.3s ease;
   }
   
@@ -227,9 +223,6 @@ form{
   .btn-41:active {
     top: 2px;
   }
-
-
-
 .icon-cart{
     position: relative;
 }
@@ -246,16 +239,13 @@ form{
     top: 50%;
     right: -20px;
 }
-.title{
-    font-size: xx-large;
-}
 .listProduct{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 .listProduct .item{
-    background-color: #EEEEE6;
+    background-color: #f6d5d1;
     padding: 20px;
     border-radius: 20px;
 }
@@ -267,25 +257,31 @@ form{
     letter-spacing: 7px;
     font-size: small;
 }
-.listProduct .item button{
-    background-color: #353432;
-    color: #eee;
-    border: none;
-    padding: 5px 10px;
-    margin-top: 10px;
-    border-radius: 20px;
+#img-prod{
+    width: 183px; border-radius: 20px;
 }
+form{
+    Width: 360px;
+    border: 1px solid #f44c7f;
+    PADDING: 4%;
+    box-shadow: -1px -1px 7px 6px #f44c7f91;
+    border-radius: 32px;
 
-#btt{
-    background-color: #353432;
-    color: #eee;
-    border: none;
-    padding: 5px 10px;
-    margin-top: 3%;
-    border-radius: 20px;
-    POSITION: absolute;
-    TEXT-ALIGN: center;
-    RIGHT: 21%;
+    Width: 360px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+}
+.logo{
+    POSITION: sticky;
+    border-radius: 50%;
+    margin: -4% 45%;
+}
+#liv{
+    display: grid;
+    grid-template-columns: repeat(2,83%);
+    GRID-GAP: 53%;
+    JUSTIFY-ITEMS: flex-end;
 }
 
 #h1{
@@ -307,11 +303,6 @@ form{
 #item{
     MARGIN: 0px 0 0 -1%;
     PADDING: 16%;
-}
-#serim{
-    width: 354px;
-    height: 246px;
-    border-radius: 12px;
 }
 
 /* cart */
@@ -403,9 +394,6 @@ body.showCart .container{
 iframe{
     width: 484px; height: 300px; 
     PADDING: 2%;
-}
-#car1, #car2, #car3{
-display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
 }
 #img_car{
     width: 300px; height: 174px;
@@ -506,6 +494,12 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
     #test1{
         border-width: 123px 82px 0 0;
         }
+    #test2{
+    border-width: 0 0 60px 60px;
+    }
+    #test3{
+        border-width: 103px 0 0 62px ;
+    }
     header {
         WIDTH: 100%;
         padding: 13px 0;
@@ -525,8 +519,9 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
     #face pre {
         padding: 12% 7% 7% 2%;
         font-size: 20px;
-        MARGIN-TOP: 7%;
-        PADDING-BOTTOM: 86%;
+        MARGIN-TOP: -6%;
+    PADDING-BOTTOM: 99%;
+        color: black;
     }
     #h1 {
          font-size: 36px;
@@ -545,14 +540,14 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
         PADDING: 1%;
     }
     .listProduct {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }   
+    .listProduct .item {
+        padding: 11px;
     }
-    #car1, #car2, #car3{
-        display:grid; 
-        grid-template-columns: repeat(1,1fr);
-        position:relative;
-        left: 1%;
-        }
+    #img-prod {
+    width: 95px;
+      }
     #img_car{
         width: 277px;
         height: 162px;
@@ -560,6 +555,30 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
         PADDING: 1%;
         border-radius: 20PX;
     }
+    form{
+        grid-template-columns: repeat(1,1fr);
+        PADDING: 4%;
+        Width: 216px;
+        }
+        .logo{
+            border-radius: 50%;
+            margin: -11% 36%;
+        }
+        input{
+            margin-bottom: 3%;
+            WIDTH: 198PX;
+        }
+        #liv{
+            grid-template-columns: repeat(2,34%);
+        GRID-GAP: 19%;
+        }
+        .btn-41 {
+           MARGIN-TOP: -5%;
+        }
+        .checkOut{
+            LEFT: 23%;
+         }
+        
 }
 
 @media screen and (min-width: 360px) {
@@ -576,18 +595,22 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
    #face pre {
     padding: 6% 7% 7% 1%;
     font-size: 23px;
-    MARGIN-TOP: 14%;
-    PADDING-BOTTOM: 62%;
+    MARGIN-TOP: -8%;
+    PADDING-BOTTOM: 84%;
     }
     nav{
         width: 6%;
     }
-    #car1, #car2, #car3 {
-    left:13%;
-    }#main-l {
+    #main-l {
         width: 80px;
     }
-  
+    #img-prod{
+        width: 119px;
+    }
+    
+    .listProduct .item {
+        padding: 17px;
+    } 
 }
 
 @media screen and (min-width: 375px) {
@@ -607,10 +630,10 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
         padding-top: 47%;
     }
     #face pre {
-        padding: 8% 7% 7% 3%;
-        font-size: 26px;
-        MARGIN-TOP: 14%;
-        PADDING-BOTTOM: 84%;
+        padding: 0% 7% 7% 3%;
+        font-size: 24px;
+        MARGIN-TOP: -2%;
+        PADDING-BOTTOM: 88%;
     }
     .cartTab {
         width: 359px;
@@ -618,19 +641,32 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
     .listCart .item {
         gap: 0px;
     }
-  iframe {
-        width: 373px;
-    }
+    
+    .listProduct .item {
+        padding: 20px;
+    } 
     #item {
         MARGIN: 0px 0 0 -8%;
         PADDING: 63% 18% 45% 18%;
     }
-    #car1, #car2, #car3 {
-        left: 10%;
-    }
     #img_car {
         width: 303px;
         height: 189px;
+    }
+    #test2{
+        border-width: 0 0 80px 80px;
+        }
+        #test3{
+            border-width: 123px 0 0 82px ;
+        }
+    form {
+    Width: 246px;
+     }
+     input {
+        WIDTH: 221PX;
+    }
+    .logo {
+        margin: -11% 38%;
     }
 }
 
@@ -642,29 +678,46 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
     #h1 {
         font-size: 42px;
     }
-    #car1, #car2, #car3 {
-        left: 10%;
-    }
-    iframe {
-        width: 392px;
-    }
 }
 
 @media screen and (min-width: 412px) {
     #face pre {
         padding: 8% 7% 7% 3%;
         font-size: 26px;
-        MARGIN-TOP: 11%;
-        PADDING-BOTTOM: 74%;
+        MARGIN-TOP: -9%;
+        PADDING-BOTTOM: 89%;
     }
+
+  
+    form{
+    grid-template-columns: repeat(1,1fr);
+    PADDING: 2%;
+     Width: 293px;
+    }
+    .logo{
+        border-radius: 50%;
+        margin: -8% 39%;
+    }
+    input{
+        margin-bottom: 3%;
+         WIDTH: 259PX;
+    }
+    #liv{
+        grid-template-columns: repeat(2,34%);
+    GRID-GAP: 19%;
+    }
+    .checkOut{
+        LEFT: 29%;
+     }
+
 }
 
 @media screen and (min-width: 414px) {
     #face pre {
         padding: 4% 7% 7% 2%;
         font-size: 29px;
-        MARGIN-TOP: 4%;
-        PADDING-BOTTOM: 73%;
+        MARGIN-TOP: -11%;
+        PADDING-BOTTOM: 104%;
     }
 }
 
@@ -678,11 +731,17 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
     #test {
     border-width: 100px 100px 0 0;
     }
+    #test2{
+        border-width: 0 0 100px 100px;
+    }
+    #test3{
+        border-width: 143px 0 0 102px ;
+    }
     #face pre {
     padding: 0% 7% 7% 3%;
     font-size: 34px;
-    MARGIN-TOP: 5%;
-    PADDING-BOTTOM: 58%;
+    MARGIN-TOP: -12%;
+    PADDING-BOTTOM: 74%;
     }
     #uses_grid {
     grid-template-columns: repeat(2,1fr);
@@ -696,21 +755,27 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
         HEIGHT: 50%;
             margin: 10% 10% 10% -2%;
     }
+    #img-prod {
+        width: 155px;
+    }
     #h1 {
         font-size: 47px;
     }
     .btn {
         font-size: 21px;
     }
-    #serim {
-        width: 301px;
-        height: 203px;
-    }
     .listProduct {
         grid-template-columns: repeat(2, 1fr);
     }
-    #car1, #car2, #car3 {
-        left: 21%;
+    form {
+        Width: 366px;
+        PADDING: 6%;
+    }
+    .logo {
+        margin: -8% 40%;
+    }
+    input {
+        WIDTH: 330PX;
     }
 }
 
@@ -728,10 +793,11 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
       WIDTH: auto;
     }
     #face pre {
-    padding: 6% 7% 7% 2%;
-    font-size: 38px;
-    MARGIN-TOP: -24%;
-    PADDING-BOTTOM: 26%;
+    
+        padding: 6% 7% 7% 4%;
+        font-size: 38px;
+        MARGIN-TOP: -30%;
+        PADDING-BOTTOM: 33%;    
         COLOR: BLACK;
     }
     #face {
@@ -750,10 +816,6 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
         padding: 2%;
         font-size: 23px;
     }
-    #car1, #car2, #car3 {
-         grid-template-columns: repeat(2,1fr);
-         left: 4%;
-    }
     #foo {
         grid-template-columns: repeat(2,1fr);
     }
@@ -769,16 +831,12 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
     #face pre {
         padding: 6% 7% 7% 5%;
         font-size: 38px;
-        MARGIN-TOP: -24%;
-        PADDING-BOTTOM: 26%;
+        MARGIN-TOP: -29%;
+        PADDING-BOTTOM: 30%;
     }  
  
     .listProduct {
         grid-template-columns: repeat(3, 1fr);
-    }
-    #car1, #car2, #car3 {
-         grid-template-columns: repeat(2,1fr);
-         left: 5%;
     }
 }
 
@@ -793,10 +851,6 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
         width: 150px;
         margin: 10% 3% 10% 0%;
     }
-    
-    #car1, #car2, #car3 {
-        left: 7%;
-    } 
 }
 
 @media screen and (min-width: 1024px) {
@@ -829,6 +883,13 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
     #test1{
         border-width: 200px 154px 0 0;
         }
+    #test2 {
+    border-width: 0 0 150px 150px;
+      }
+
+    #test3 {
+    border-width: 200px 0 0 154px;
+    }
     header {
         WIDTH: 100%;
         padding: 17px 0;
@@ -844,10 +905,10 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
         padding-top: 21%;
     }
     #face pre {
-        padding: 7% 7% 7% 5%;
+        padding: 2% 7% 7% 5%;
         font-size: 46px;
-        MARGIN-TOP: -7%;
-        PADDING-BOTTOM: 15%;
+        MARGIN-TOP: -8%;
+        PADDING-BOTTOM: 20%;
     }
     
     #h1 {
@@ -856,18 +917,12 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
     #item{
         MARGIN: 0px 0 0 -1%;  
         PADDING: 19% 16% 11% 16%;
-    }
-    #serim{
-        width: 354px;
-        height: 246px;
-        border-radius: 12px;
+    } 
+    #img-prod{
+        width: 183px;
     }
     .listProduct {
         grid-template-columns: repeat(4, 1fr);
-    }
-    #car1, #car2, #car3 {
-        display: flex;
-        left: 0%;
     }
     iframe{
         width: 484px; height: 300px; 
@@ -879,5 +934,34 @@ display:flex; JUSTIFY-CONTENT: SPACE-AROUND;
         font-size: 22px;
         MARGIN-TOP: 3%;
     }
+    form{
+        PADDING: 4%;
+        grid-template-columns: repeat(2,1fr);
+        Width: 360px;
+    }
+    .logo{
+        border-radius: 50%;
+        margin: -4% 45%;
+    }
+    #liv{
+        grid-template-columns: repeat(2,83%);
+        GRID-GAP: 53%;
+    }
+        input{
+            WIDTH: 244PX;
+    margin-bottom: 15%;
+        }
+        .btn-41 {
+            MARGIN-TOP: 7%;
+         }
+         .checkOut{
+            LEFT: 92%;
+         }
+}
+
+@media screen and (min-width: 1280px){
+  #img-prod {
+    width: 233px;
+  }
 }
 

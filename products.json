@@ -1,0 +1,105 @@
+[
+    {
+        "id": 1,
+        "name":" Press-on nail",
+        "price": 200,
+        "image": "image/1.jpg"
+    },
+    {
+        "id": 2,
+        "name":" Press-on nail",
+        "price": 250,
+        "image": "image/2.jpg"
+    },
+    {
+        "id": 3,
+        "name":" Press-on nail",
+        "price": 290,
+        "image": "image/3.jpg"
+    },
+    {
+        "id": 4,
+        "name":" Press-on nail",
+        "price": 200,
+        "image": "image/4.jpg"
+    },
+    {
+        "id": 5,
+        "name":" Press-on nail",
+        "price": 300,
+        "image": "image/5.jpg"
+    },
+    {
+        "id": 6,
+        "name":" Press-on nail",
+        "price": 200,
+        "image": "image/6.jpg"
+    },
+    {
+        "id": 7,
+        "name":" Press-on nail",
+        "price": 200,
+        "image": "image/7.jpg"
+    },
+    {
+        "id": 8,
+        "name":" Press-on nail",
+        "price": 200,
+        "image": "image/8.jpg"
+    },
+    {
+        "id": 9,
+        "name":" Press-on nail",
+        "price": 200,
+        "image": "image/9.jpg"
+    },
+    {
+        "id": 10,
+        "name":" Press-on nail",
+        "price": 300,
+        "image": "image/10.jpg"
+    },
+    {
+        "id": 11,
+        "name":" Press-on nail",
+        "price": 200,
+        "image": "image/12.jpg"
+    },
+    {
+        "id": 13,
+        "name":" Press-on nail",
+        "price": 200,
+        "image": "image/13.jpg"
+    },
+    {
+        "id": 14,
+        "name":" Press-on nail",
+        "price": 200,
+        "image": "image/14.jpg"
+    },
+    {
+        "id": 15,
+        "name":" Press-on nail",
+        "price": 200,
+        "image": "image/15.jpg"
+    },
+    {
+        "id": 16,
+        "name":" Press-on nail",
+        "price": 300,
+        "image": "image/16.jpg"
+    },
+    {
+        "id": 17,
+        "name":" Press-on nail",
+        "price": 200,
+        "image": "image/17.jpg"
+    },
+    {
+        "id": 18,
+        "name":" Press-on nail",
+        "price": 200,
+        "image": "image/18.jpg"
+    }
+
+]
