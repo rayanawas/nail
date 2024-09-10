@@ -572,9 +572,6 @@ iframe{
             grid-template-columns: repeat(2,34%);
         GRID-GAP: 19%;
         }
-        .btn-41 {
-           MARGIN-TOP: -5%;
-        }
         .checkOut{
             LEFT: 23%;
          }
